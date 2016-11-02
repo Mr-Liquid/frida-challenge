@@ -1,0 +1,9 @@
+<div class="fr-settings-menu" >
+  <a (click)="onOpenMenu()" class="fr-settings-link">{{user}}</a>
+  <div class="fr-menu" [ngClass]="{'fr-open':showMenu}">
+    <ul>
+      <li><a href="javascript:void(0)">Edit profile</a></li>
+      <li><a href="javascript:void(0)">Manage users</a></li>
+    </ul>
+  </div>
+</div>

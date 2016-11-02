@@ -1,0 +1,23 @@
+@import "../../../styles";
+
+.fr-table {
+  width: 100%;
+  thead {
+    tr {
+      background-color: @thin-gray;
+    }
+    th {
+      font-size: 11px;
+      padding: 8px;
+      border-right: 1px solid @grey;
+      border-top: 1px solid @grey;
+      border-bottom: 1px solid @grey;
+      &:last-child {
+        border-right: none;
+      }
+      &.top-item-name {
+        min-width: 130px;
+      }
+    }
+  }
+}

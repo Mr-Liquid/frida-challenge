@@ -1,0 +1,48 @@
+<div class="fr-tabs-wrapper">
+  <tabset type="tabs">
+    <tab heading="overview" [customClass]="'header-text-type'">
+      <div class="fr-tab-content-wrapper">
+        <div class="fr-tab-inner-content">
+          <app-table></app-table>
+        </div>
+      </div>
+    </tab>
+    <tab heading="user" [customClass]="'header-text-type'">
+      <div class="fr-tab-content-wrapper">
+        <div class="fr-tab-inner-content">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" #firstname>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" #lastname>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" #email>
+          </div>
+          <div>
+            <label for="color">Color</label>
+            <input type="text" id="color" #color>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="text" id="password" #password>
+          </div>
+          <div>
+            <label for="disabled">Disabled</label>
+            <input type="checkbox" id="disabled" #disabled>
+          </div>
+          <button (click)="onSubmit(firstname.value, lastname.value, email.value, color.value, password.value, disabled.value)">Submit</button>
+          <hr>
+          <button (click)="onGetData()">Get Data</button>
+          <ul>
+            <li *ngFor="let item of items">{{item.firstName}}</li>
+          </ul>
+        </div>
+      </div>
+    </tab>
+  </tabset>
+</div>
+

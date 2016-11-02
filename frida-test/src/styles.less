@@ -1,3 +1,33 @@
 /* Global vars */
 
+@black: #000;
 @header-links: #fff;
+@light-blue: #71A5DA;
+@grey: #C8C8C8;
+@thin-gray: #FBFBFB;
+
+
+/* Global styles and overrides  */
+
+html,
+body {
+  font-size: 16px;
+  height: 100%;
+}
+
+body{
+  //position: relative;
+  //height: auto;
+  //min-height: 100% !important;
+}
+
+.header-text-type {
+  text-transform: uppercase;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus{
+  background-color: @light-blue;
+  color: @header-links;
+}
+
